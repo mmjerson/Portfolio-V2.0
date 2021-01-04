@@ -25,7 +25,7 @@
 /***Setting default setting***/
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -143,8 +143,8 @@ header .container nav .list a:hover {
   .list {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,6 +206,11 @@ header .container nav .list a:hover {
 }
 
 /****HOME****/
+.home {
+  height: 100vh;
+  width: 100%;
+}
+
 .home #max-width {
   height: 100vh;
   width: 100%;
@@ -318,10 +323,11 @@ header .container nav .list a:hover {
 
 @media all and (max-width: 425px) {
   .home #max-width {
-    max-width: 100%;
+    width: 100%;
+    max-height: 100px;
   }
   .home .max-width .home-content {
-    padding-top: 160px;
+    padding-top: 260px;
     padding-left: 60px;
   }
 }
@@ -479,7 +485,6 @@ header .container nav .list a:hover {
     padding-right: 100px;
   }
   .about .contss .about-img {
-    max-width: 90%;
     margin-top: 10px;
     margin-left: 40px;
   }
@@ -694,7 +699,7 @@ header .container nav .list a:hover {
 .contact {
   width: 100%;
   padding-bottom: 100px;
-  height: auto 0;
+  height: auto;
 }
 
 .contact .contact-text .contact-content {
@@ -733,7 +738,7 @@ header .container nav .list a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 1200px;
+  max-width: 100%x;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -868,7 +873,6 @@ footer {
   font-family: "Montserrat", sans-serif;
   padding-top: 40px;
   color: black;
-  height: auto;
 }
 
 footer .footer-content {
@@ -886,7 +890,6 @@ footer .footer-content {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 100%;
 }
 
 footer .footer-content h3 {
@@ -897,7 +900,6 @@ footer .footer-content h3 {
 }
 
 footer .footer-content p {
-  max-width: 500px;
   margin: 5px auto;
   line-height: 28px;
   font-size: 14px;
@@ -942,6 +944,7 @@ footer .footer-bottom {
   padding: 20px 0;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  max-width: 100%;
 }
 
 footer .footer-bottom p {
@@ -953,5 +956,13 @@ footer .footer-bottom p {
 
 footer .footer-bottom span {
   color: white;
+}
+
+@media all and (max-width: 425px) {
+  footer footer {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -31,7 +31,7 @@ $fontfamily1: "Montserrat", sans-serif;
 /***Setting default setting***/
 * {
   padding: 0px;
-  margin: 0px;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -121,8 +121,8 @@ header {
   .list {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 90vh;
+    top: 10vh;
     background-color: $secondaryColor;
     display: flex;
     flex-direction: column;
@@ -160,6 +160,8 @@ header {
 }
 /****HOME****/
 .home {
+  height: 100vh;
+  width: 100%;
   #max-width {
     height: 100vh;
     width: 100%;
@@ -272,11 +274,12 @@ header {
   }
   @media all and (max-width: 425px) {
     #max-width {
-      max-width: 100%;
+      width: 100%;
+      max-height: 100px;
     }
     .max-width {
       .home-content {
-        padding-top: 160px;
+        padding-top: 260px;
         padding-left: 60px;
       }
     }
@@ -428,7 +431,6 @@ header {
         padding-right: 100px;
       }
       .about-img {
-        max-width: 90%;
         margin-top: 10px;
         margin-left: 40px;
       }
@@ -658,7 +660,7 @@ header {
 .contact {
   width: 100%;
   padding-bottom: 100px;
-  height: auto 0;
+  height: auto;
   .contact-text {
     .contact-content {
       padding-top: 150px;
@@ -683,7 +685,7 @@ header {
       .contact-info {
         display: flex;
         width: 100%;
-        max-width: 1200px;
+        max-width: 100%x;
         align-items: center;
         justify-content: center;
         padding: 0 20px;
@@ -800,14 +802,13 @@ footer {
   font-family: $fontfamily1;
   padding-top: 40px;
   color: $fontColor1;
-  height: auto;
+
   .footer-content {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    width: 100%;
 
     h3 {
       font-size: 1.8rem;
@@ -816,7 +817,6 @@ footer {
       line-height: 3rem;
     }
     p {
-      max-width: 500px;
       margin: 5px auto;
       line-height: 28px;
       font-size: 14px;
@@ -849,6 +849,7 @@ footer {
     padding: 20px 0;
     text-align: center;
     font-family: $fontfamily1;
+    max-width: 100%;
     p {
       font-size: 14px;
       word-spacing: 2px;
@@ -857,6 +858,13 @@ footer {
     }
     span {
       color: $secondaryColor;
+    }
+  }
+  @media all and (max-width: 425px) {
+    footer {
+      margin: 0 auto;
+      max-width: 100%;
+      width: 100%;
     }
   }
 }
