@@ -857,6 +857,7 @@ header .container nav .list a:hover {
     width: 100%;
     max-width: 300px;
     margin: 10px 0;
+    height: auto;
   }
 }
 
