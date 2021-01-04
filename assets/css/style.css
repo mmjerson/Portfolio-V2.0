@@ -756,7 +756,7 @@ header .container nav .list a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 100%x;
+  max-width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
