@@ -629,7 +629,7 @@ header {
         padding-left: 65px;
       }
       .course-wrapper {
-        padding-left: 30px;
+        padding-left: 10px;
         .course {
           flex-direction: column;
           width: 98%;
@@ -669,7 +669,7 @@ header {
         padding-left: 45px;
       }
       .course-wrapper {
-        padding-left: 15px;
+        padding-left: 10px;
       }
     }
   }
@@ -800,19 +800,19 @@ header {
         }
       }
       .contact-info-wrap {
-        padding-left: 10px;
+        padding-left: 5px;
         .contact-info {
           flex-direction: column;
           .card {
-            width: 100%;
-            max-width: 300px;
+            width: 90%;
+            max-width: 100%;
             margin: 10px 0;
           }
         }
       }
     }
   }
-  @media all and (max-width: 3755px) {
+  @media all and (max-width: 375px) {
     .contact-text {
       .contact-content {
         padding-top: 40px;
@@ -823,7 +823,7 @@ header {
       .contact-info {
         flex-direction: column;
         .card {
-          width: 100%;
+          width: 90%;
           max-width: 300px;
           margin: 10px 0;
         }

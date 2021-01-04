@@ -673,7 +673,7 @@ header .container nav .list a:hover {
     padding-left: 65px;
   }
   .projects .project-text .course-wrapper {
-    padding-left: 30px;
+    padding-left: 10px;
   }
   .projects .project-text .course-wrapper .course {
     -webkit-box-orient: vertical;
@@ -709,7 +709,7 @@ header .container nav .list a:hover {
     padding-left: 45px;
   }
   .projects .project-text .course-wrapper {
-    padding-left: 15px;
+    padding-left: 10px;
   }
 }
 
@@ -871,7 +871,7 @@ header .container nav .list a:hover {
     padding: 5px 0px 20px 0px;
   }
   .contact .contact-text .contact-info-wrap {
-    padding-left: 10px;
+    padding-left: 5px;
   }
   .contact .contact-text .contact-info-wrap .contact-info {
     -webkit-box-orient: vertical;
@@ -880,13 +880,13 @@ header .container nav .list a:hover {
             flex-direction: column;
   }
   .contact .contact-text .contact-info-wrap .contact-info .card {
-    width: 100%;
-    max-width: 300px;
+    width: 90%;
+    max-width: 100%;
     margin: 10px 0;
   }
 }
 
-@media all and (max-width: 3755px) {
+@media all and (max-width: 375px) {
   .contact .contact-text .contact-content {
     padding-top: 40px;
     padding-left: 65px;
@@ -898,7 +898,7 @@ header .container nav .list a:hover {
             flex-direction: column;
   }
   .contact .contact-info-wrap .contact-info .card {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     margin: 10px 0;
   }
