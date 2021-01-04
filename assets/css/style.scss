@@ -289,6 +289,12 @@ header {
       height: 100%;
       width: 100%;
     }
+    .max-width {
+      .home-content {
+        padding-top: 260px;
+        padding-left: 40px;
+      }
+    }
   }
 }
 
@@ -439,6 +445,16 @@ header {
       .about-img {
         margin-top: 10px;
         margin-left: 40px;
+      }
+    }
+  }
+  @media all and (max-width: 425px) {
+    .contss {
+      flex-direction: column;
+
+      .about-content {
+        padding-top: 100px;
+        padding-left: 40px;
       }
     }
   }
@@ -666,7 +682,7 @@ header {
     .project-text {
       .project-content {
         padding-top: 40px;
-        padding-left: 45px;
+        padding-left: 40px;
       }
       .course-wrapper {
         padding-left: 10px;
@@ -815,7 +831,7 @@ header {
     .contact-text {
       .contact-content {
         padding-top: 40px;
-        padding-left: 65px;
+        padding-left: 40px;
       }
     }
     .contact-info-wrap {
