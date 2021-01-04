@@ -737,15 +737,9 @@ header .container nav .list a:hover {
 }
 
 .contact .contact-text .contact-info-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-family: "Montserrat", sans-serif;
   padding-top: 50px;
   width: 100%;
