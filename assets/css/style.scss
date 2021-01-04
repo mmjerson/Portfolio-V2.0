@@ -284,6 +284,12 @@ header {
       }
     }
   }
+  @media all and (max-width: 375px) {
+    #max-width {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 
 /****ABOUT****/
@@ -656,6 +662,17 @@ header {
       }
     }
   }
+  @media all and (max-width: 375px) {
+    .project-text {
+      .project-content {
+        padding-top: 40px;
+        padding-left: 45px;
+      }
+      .course-wrapper {
+        padding-left: 15px;
+      }
+    }
+  }
 }
 .contact {
   width: 100%;
@@ -865,6 +882,30 @@ footer {
       margin: 0 auto;
       max-width: 100%;
       width: 100%;
+    }
+  }
+  @media all and (max-width: 375px) {
+    .footer-content {
+      h3 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 10px;
+      }
+      .socials {
+        li {
+          a {
+            i {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .footer-bottom {
+      p {
+        font-size: 10px;
+      }
     }
   }
 }

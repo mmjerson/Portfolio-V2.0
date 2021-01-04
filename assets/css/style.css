@@ -332,6 +332,13 @@ header .container nav .list a:hover {
   }
 }
 
+@media all and (max-width: 375px) {
+  .home #max-width {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 /****ABOUT****/
 .about {
   width: 100%;
@@ -696,6 +703,16 @@ header .container nav .list a:hover {
   }
 }
 
+@media all and (max-width: 375px) {
+  .projects .project-text .project-content {
+    padding-top: 40px;
+    padding-left: 45px;
+  }
+  .projects .project-text .course-wrapper {
+    padding-left: 15px;
+  }
+}
+
 .contact {
   width: 100%;
   padding-bottom: 100px;
@@ -963,6 +980,21 @@ footer .footer-bottom span {
     margin: 0 auto;
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media all and (max-width: 375px) {
+  footer .footer-content h3 {
+    font-size: 1.5rem;
+  }
+  footer .footer-content p {
+    font-size: 10px;
+  }
+  footer .footer-content .socials li a i {
+    font-size: 14px;
+  }
+  footer .footer-bottom p {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
