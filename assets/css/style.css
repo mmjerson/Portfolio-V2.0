@@ -748,6 +748,7 @@ header .container nav .list a:hover {
           justify-content: center;
   font-family: "Montserrat", sans-serif;
   padding-top: 50px;
+  width: 100%;
 }
 
 .contact .contact-text .contact-info-wrap .contact-info {
