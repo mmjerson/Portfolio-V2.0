@@ -800,6 +800,7 @@ header {
         }
       }
       .contact-info-wrap {
+        padding-left: 10px;
         .contact-info {
           flex-direction: column;
           .card {
@@ -807,6 +808,24 @@ header {
             max-width: 300px;
             margin: 10px 0;
           }
+        }
+      }
+    }
+  }
+  @media all and (max-width: 3755px) {
+    .contact-text {
+      .contact-content {
+        padding-top: 40px;
+        padding-left: 65px;
+      }
+    }
+    .contact-info-wrap {
+      .contact-info {
+        flex-direction: column;
+        .card {
+          width: 100%;
+          max-width: 300px;
+          margin: 10px 0;
         }
       }
     }
