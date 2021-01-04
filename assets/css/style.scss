@@ -658,6 +658,7 @@ header {
 .contact {
   width: 100%;
   padding-bottom: 100px;
+  height: auto 0;
   .contact-text {
     .contact-content {
       padding-top: 150px;
@@ -786,7 +787,6 @@ header {
             width: 100%;
             max-width: 300px;
             margin: 10px 0;
-            height: auto;
           }
         }
       }
@@ -859,61 +859,4 @@ footer {
       color: $secondaryColor;
     }
   }
-}
-.preloader-wrapper {
-  h1 {
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #101010;
-  }
-  #preloader {
-    width: 100%;
-    height: 100vh;
-    background: #101010;
-    overflow: hidden;
-    position: fixed;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    .p {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-    }
-  }
-  .pace {
-    pointer-events: none;
-    user-select: none;
-    z-index: 2000;
-    position: fixed;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 400px;
-    border: 0px;
-    height: 1px;
-    overflow: hidden;
-    background: #1b1b1b;
-  }
-}
-.pace .pace-progress {
-  box-sizing: border-box;
-  transform: translate3d(0, 0, 0);
-  max-width: 400px;
-  position: fixed;
-  z-index: 2000;
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 100%;
-  height: 100%;
-  width: 100%;
-  background: grey;
-}
-.pace.pace-inactive {
-  display: none;
 }
