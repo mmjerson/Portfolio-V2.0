@@ -827,16 +827,29 @@ header {
       }
     }
   }
+  @media all and (max-width: 390px) {
+    .contact-text {
+      .contact-content {
+        padding-top: 40px;
+        padding-left: 30px;
+      }
+    }
+    .contact-info-wrap {
+      .contact-info {
+        flex-direction: column;
+        .card {
+          width: 90%;
+          max-width: 300px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
   @media all and (max-width: 375px) {
     .contact-text {
       .contact-content {
         padding-top: 40px;
         padding-left: 40px;
-        .contact-text-2 {
-          font-size: 1.5rem;
-          font-weight: 600;
-          padding: 1px 0px 10px 0px;
-        }
       }
     }
     .contact-info-wrap {

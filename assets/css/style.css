@@ -898,15 +898,28 @@ header .container nav .list a:hover {
   }
 }
 
+@media all and (max-width: 390px) {
+  .contact .contact-text .contact-content {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+  .contact .contact-info-wrap .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact-info-wrap .contact-info .card {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
 @media all and (max-width: 375px) {
   .contact .contact-text .contact-content {
     padding-top: 40px;
     padding-left: 40px;
-  }
-  .contact .contact-text .contact-content .contact-text-2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1px 0px 10px 0px;
   }
   .contact .contact-info-wrap .contact-info {
     -webkit-box-orient: vertical;
