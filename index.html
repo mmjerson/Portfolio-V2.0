@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" href="./assets/img/mj.png" type="image/icon type">
     <title>Portfolio</title>
 </head>
 <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-    
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
     });
-    </script>
-     
+</script>
+
 
 <body>
 
     <!---------------------HEADER/NAVBAR---------------->
     <header>
         <div class="container">
-        <nav>
-            <div class="logo"><a href="#home" id="logo">MJMolines</a></div>
-            <div class="conts">
-            <p class="menuu">MENU</p>
-            <div class="hamburger" id="hamburger"> 
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </div>
+            <nav>
+                <div class="logo"><a href="#home" id="logo">MJMolines</a></div>
+                <div class="conts">
+                    <p class="menuu">MENU</p>
+                    <div class="hamburger" id="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
                 <ul class="list" id="list">
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
-       </nav> 
-    </div>
+            </nav>
+        </div>
 
 
 
-    <!----------------------HOME SECTION-------------------->
+        <!----------------------HOME SECTION-------------------->
     </header>
     <section class="home" id="home">
         <div class="max-width" id="max-width">
             <div class="home-content" id="home-content">
-                <div class="text-1" id="text-1" >MICHAEL JERSON</div>
+                <div class="text-1" id="text-1">MICHAEL JERSON</div>
                 <div class="text-2" id="text-2">Junior Web Developer</div>
-                <div class="text-3" id="text-3">I design and build things on the Internet. You<br> wanna know more About me?</div>
-                <a href="#projects" class="aref" id="aref">View Projects</a>&nbsp;<span id="aref">or</span>&nbsp;<span><a href="#about" class="aref" id="aref">Read About Me</a></span>           
+                <div class="text-3" id="text-3">I design and build things on the Internet. You<br> wanna know more About
+                    me?</div>
+                <a href="#projects" class="aref" id="aref">View Projects</a>&nbsp;<span
+                    id="aref">or</span>&nbsp;<span><a href="#about" class="aref" id="aref">Read About Me</a></span>
             </div>
         </div>
     </section>
@@ -82,13 +87,15 @@
     <section class="about" id="about">
         <div class="contss" id="contss">
             <div class="about-content">
-                <div class="about-text-1" >About Me</div>
+                <div class="about-text-1">About Me</div>
                 <div class="about-text-2">You can call me MJ</div>
-                <div class="about-text-3">I'm Michael Jerson, a Computer Engineering <br>fresh graduate who is pursuing my dream as<br> a Web Developer. I'am a Passionate Web <br>developer who strives hard to finish my <br>work. You can count on me!</div>
-                <a href="./assets/cv/MJ CV.pdf" class="aref">Download CV</a> 
-            </div> 
+                <div class="about-text-3">I'm Michael Jerson, a Computer Engineering <br>fresh graduate who is pursuing
+                    my dream as<br> a Web Developer. I'am a Passionate Web <br>developer who strives hard to finish my
+                    <br>work. You can count on me!</div>
+                <a href="./assets/cv/MichaelJersonCV.pdf" class="aref">Download CV</a>
+            </div>
             <div><img src="./assets/img/about.png" alt="" class="about-img" width="590" height="300"></div>
-        </div> 
+        </div>
     </section>
 
 
@@ -96,86 +103,64 @@
     <section class="projects" id="projects">
         <div class="project-text" id="project-text">
             <div class="project-content">
-                <div class="project-text-1" >Projects</div>
-                <div class="project-text-2">PERSONAL PROJECTS</div>              
-        </div>  
-                            <!--1st-->
-        <div class="course-wrapper">  
-        <div class="course">
-            <div class="preview">
-               <img src="./assets/img/site.png">
+                <div class="project-text-1">Projects</div>
+                <div class="project-text-2">PERSONAL PROJECTS</div>
             </div>
-         <div class="info">
-                <h5>Personal Project #1</h5>
-                <h2>Covid-19 PH Live Stats</h2>
-                <p class="p-trunc">
-                    This Simple Webpage will run as a live update service to keep everyone in The Philippines  informed about the coronavirus Active Cases, total, critical, deaths recovery and Test done.</p>
-                    <div class="links">
-                        <div class="fa">
-                        <a href="https://mmjerson.github.io/covid19/">LIVE<i class="fas fa-link"></i></a>
+            <!--1st-->
+            <div class="course-wrapper">
+                <div class="course">
+                    <div class="preview">
+                        <img src="./assets/img/site.png">
                     </div>
-                    <div class="fa">
-                        <a href="https://github.com/mmjerson/covid19">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
-                    </div>
-                    </div>
-                    <div class="btn-tags" id="tags">
+                    <div class="info">
+                        <h5>Personal Project #1</h5>
+                        <h2>Covid-19 PH Live Stats</h2>
+                        <p class="p-trunc">
+                            This Simple Webpage will run as a live update service to keep everyone in The Philippines
+                            informed about the coronavirus Active Cases, total, critical, deaths recovery and Test done.
+                        </p>
+                        <div class="links">
+                            <div class="fa">
+                                <a href="https://mmjerson.github.io/covid19/">LIVE<i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="fa">
+                                <a href="https://github.com/mmjerson/covid19">&nbsp&nbsp&nbspCODE<i
+                                        class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="btn-tags" id="tags">
                             <h5>Tags:</h5>
                             <button class="btns">HTML5</button>
                             <button class="btns">CSS3</button>
                             <button class="btns">JAVASCRIPT</button>
                             <button class="btns">WEB API</button>
-                    </div>
-            </div>
-        </div>
-        </div>
-                                <!--2nd-->
-        <div class="course-wrapper" >  
-            <div class="course">
-                <div class="preview">
-                   
-                    <img src="./assets/img/site2.png">
-                
-                </div>
-             <div class="info">
-                <h5>Personal Project #2</h5>
-                <h2>Real Estate Landing Page</h2>
-                <p class="p-trunc">
-                    A Simple Revamped Version of Fadcon Website. This is not official website and not planning to replaced the original. Copyright Disclaimer under Section 107 of the copyright act 1976. </p>
-                    <div class="links">
-                        <div class="fa">
-                        <a href="https://samplelanding.netlify.app/#">LIVE<i class="fas fa-link"></i></a>
-                    </div>
-                    <div class="fa">
-                        <a href="https://github.com/Michael-Jerson/client">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
-                    </div>
-                    </div>
-                    <div class="btn-tags" id="tags">
-                        <h5>Tags:</h5>
-                        <button class="btns">HTML5</button>
-                        <button class="btns">CSS3</button>
-                        <button class="btns">JAVASCRIPT</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-                                    <!--3rd-->
-            <div class="course-wrapper">  
+            <!--2nd-->
+            <div class="course-wrapper">
                 <div class="course">
                     <div class="preview">
-                      <img src="./assets/img/port.png">
+
+                        <img src="./assets/img/site2.png">
+
                     </div>
-                 <div class="info">
-                    <h5>Personal Project #3</h5>
-                    <h2>My Portfolio Version 1.0</h2>
-                    <p class="p-trunc">
-                        This My Version 1.0 of portlio I work on. This is build using HTML5, CSS3 and Javascript. You can still visit this website or check the source code in the link below. Many thanks to Github. </p>
+                    <div class="info">
+                        <h5>Personal Project #2</h5>
+                        <h2>Real Estate Landing Page</h2>
+                        <p class="p-trunc">
+                            A Simple Revamped Version of Fadcon Website. This is not official website and not planning
+                            to replaced the original. Copyright Disclaimer under Section 107 of the copyright act 1976.
+                        </p>
                         <div class="links">
                             <div class="fa">
-                            <a href="https://mmjerson.github.io/Michael-jerson.github.io/">LIVE<i class="fas fa-link"></i></a>
-                        </div>
-                        <div class="fa">
-                            <a href="https://github.com/mmjerson/Michael-jerson.github.io">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
-                        </div>
+                                <a href="https://samplelanding.netlify.app/#">LIVE<i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="fa">
+                                <a href="https://github.com/Michael-Jerson/client">&nbsp&nbsp&nbspCODE<i
+                                        class="fas fa-code"></i></a>
+                            </div>
                         </div>
                         <div class="btn-tags" id="tags">
                             <h5>Tags:</h5>
@@ -185,28 +170,63 @@
                         </div>
                     </div>
                 </div>
-                </div>
-
-
-                <!--4th-->
-            <div class="course-wrapper">  
+            </div>
+            <!--3rd-->
+            <div class="course-wrapper">
                 <div class="course">
                     <div class="preview">
-                       <img src="./assets/img/undermarket.PNG">
+                        <img src="./assets/img/port.png">
                     </div>
-                 <div class="info">
-                    <h5>Personal Project #4</h5>
-                    <h2>UNDERMARKET</h2>
-                    <h5>STATUS: ONGOING</h5>
-                    <p class="p-trunc">
-                        An Ecommerce Landing page where it focus on selling Online Games Items and Accessories. This is just a simple landing page consist of multiple sections and owl carousel img sliders.  </p>
+                    <div class="info">
+                        <h5>Personal Project #3</h5>
+                        <h2>My Portfolio Version 1.0</h2>
+                        <p class="p-trunc">
+                            This My Version 1.0 of portlio I work on. This is build using HTML5, CSS3 and Javascript.
+                            You can still visit this website or check the source code in the link below. Many thanks to
+                            Github. </p>
                         <div class="links">
                             <div class="fa">
-                            <a href="https://mmjerson.github.io/undermarket/">LIVE<i class="fas fa-link"></i></a>
+                                <a href="https://mmjerson.github.io/Michael-jerson.github.io/">LIVE<i
+                                        class="fas fa-link"></i></a>
+                            </div>
+                            <div class="fa">
+                                <a href="https://github.com/mmjerson/Michael-jerson.github.io">&nbsp&nbsp&nbspCODE<i
+                                        class="fas fa-code"></i></a>
+                            </div>
                         </div>
-                        <div class="fa">
-                            <a href="https://github.com/mmjerson/undermarket">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
+                        <div class="btn-tags" id="tags">
+                            <h5>Tags:</h5>
+                            <button class="btns">HTML5</button>
+                            <button class="btns">CSS3</button>
+                            <button class="btns">JAVASCRIPT</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--4th-->
+            <div class="course-wrapper">
+                <div class="course">
+                    <div class="preview">
+                        <img src="./assets/img/undermarket.PNG">
+                    </div>
+                    <div class="info">
+                        <h5>Personal Project #4</h5>
+                        <h2>UNDERMARKET</h2>
+                        <h5>STATUS: ONGOING</h5>
+                        <p class="p-trunc">
+                            An Ecommerce Landing page where it focus on selling Online Games Items and Accessories. This
+                            is just a simple landing page consist of multiple sections and owl carousel img sliders.
+                        </p>
+                        <div class="links">
+                            <div class="fa">
+                                <a href="https://mmjerson.github.io/undermarket/">LIVE<i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="fa">
+                                <a href="https://github.com/mmjerson/undermarket">&nbsp&nbsp&nbspCODE<i
+                                        class="fas fa-code"></i></a>
+                            </div>
                         </div>
                         <div class="btn-tags" id="tags">
                             <h5>Tags:</h5>
@@ -218,26 +238,29 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <!--5th-->
-            <div class="course-wrapper">  
+            <!--5th-->
+            <div class="course-wrapper">
                 <div class="course">
                     <div class="preview">
-                       <img src="./assets/img/forportfolio.PNG">
+                        <img src="./assets/img/forportfolio.PNG">
                     </div>
-                 <div class="info">
-                    <h5>Personal Project #5</h5>
-                    <h2>Yesterday</h2>
-                    <p class="p-trunc">
-                        is a landing page of car services. This is just a simple landing page that can be used in larger and more broader webiste. Consist of multiple sections and a image slider and input form. </p>
+                    <div class="info">
+                        <h5>Personal Project #5</h5>
+                        <h2>Yesterday</h2>
+                        <p class="p-trunc">
+                            is a landing page of car services. This is just a simple landing page that can be used in
+                            larger and more broader webiste. Consist of multiple sections and a image slider and input
+                            form. </p>
                         <div class="links">
                             <div class="fa">
-                            <a href="https://yesterdays.netlify.app/#">LIVE<i class="fas fa-link"></i></a>
-                        </div>
-                        <div class="fa">
-                            <a href="https://github.com/mmjerson/4th-project">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
-                        </div>
+                                <a href="https://yesterdays.netlify.app/#">LIVE<i class="fas fa-link"></i></a>
+                            </div>
+                            <div class="fa">
+                                <a href="https://github.com/mmjerson/4th-project">&nbsp&nbsp&nbspCODE<i
+                                        class="fas fa-code"></i></a>
+                            </div>
                         </div>
                         <div class="btn-tags" id="tags">
                             <h5>Tags:</h5>
@@ -247,93 +270,94 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        </div>
+        <!--6th-->
+        <div class="course-wrapper">
+            <div class="course">
+                <div class="preview">
+                    <img src="./assets/img/soon.jpg">
                 </div>
-        </div>  
-    </div>
-                <!--6th-->
-            <div class="course-wrapper">  
-                <div class="course">
-                    <div class="preview">
-                       <img src="./assets/img/soon.jpg">
-                    </div>
-                 <div class="info">
+                <div class="info">
                     <h5>Personal Project #5</h5>
                     <h2>Coming Soon....</h2>
                     <p class="p-trunc">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ipsum error officia iure dicta fuga iste obcaecati. Dolorem eos animi hic porro nisi et, beatae ab culpa nostrum a? </p>
-                        <div class="links">
-                            <div class="fa">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsa ipsum error officia iure
+                        dicta fuga iste obcaecati. Dolorem eos animi hic porro nisi et, beatae ab culpa nostrum a? </p>
+                    <div class="links">
+                        <div class="fa">
                             <a href="#">LIVE<i class="fas fa-link"></i></a>
                         </div>
                         <div class="fa">
                             <a href="#">&nbsp&nbsp&nbspCODE<i class="fas fa-code"></i></a>
                         </div>
-                        </div>
-                        <div class="btn-tags" id="tags">
-                            <h5>Tags:</h5>
-                            <button class="btns">XXXXXXXXXX</button>
-                            <button class="btns">XXXXXXXXXX</button>
-                            <button class="btns">XXXXXXXXXX</button>
-                            <button class="btns">XXXXXXXXXX</button>
-                        </div>
+                    </div>
+                    <div class="btn-tags" id="tags">
+                        <h5>Tags:</h5>
+                        <button class="btns">XXXXXXXXXX</button>
+                        <button class="btns">XXXXXXXXXX</button>
+                        <button class="btns">XXXXXXXXXX</button>
+                        <button class="btns">XXXXXXXXXX</button>
                     </div>
                 </div>
-                </div>
-        </div>  
-    </div>
+            </div>
+        </div>
+        </div>
+        </div>
     </section>
 
 
 
     <!----------------------CONTACT SECTION------------------>
     <section class="contact" id="contact">
-            <div class="contact-text" id="contact-text">
-                <div class="contact-content">
-                    <div class="contact-text-1" >Countact</div>
-                    <div class="contact-text-2">GET IN TOUCH WITH ME</div> 
-                             
-                </div>
-                <div class="contact-info-wrap">
+        <div class="contact-text" id="contact-text">
+            <div class="contact-content">
+                <div class="contact-text-1">Countact</div>
+                <div class="contact-text-2">GET IN TOUCH WITH ME</div>
+
+            </div>
+            <div class="contact-info-wrap">
                 <div class="contact-info">
                     <div class="card">
                         <a href="https://www.google.com/gmail/"><i class="card-icon far fa-envelope"></i></a>
                         <p>mmjerson30@gmail.com</p>
-                      </div>
-                
-                      <div class="card">
+                    </div>
+
+                    <div class="card">
                         <a href="www.linkedin.com/in/mmjerson"><i class="card-icon fab fa-linkedin-in"></i></a>
                         <p>www.linkedin.com/in/mmjerson</p>
-                      </div>
-                
-                      <div class="card">
-                       <a href="https://github.com/mmjerson"> <i class="card-icon fab fa-github"></i></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://github.com/mmjerson"> <i class="card-icon fab fa-github"></i></a>
                         <p>github.com/mmjerson</p>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
+
+
     <!----------------------FOOTER---------------------------->
     <footer>
-            <div class="footer-content">
-                <h3>mj molines</h3>
-                <p>To God be the Glory, God bless us all!</p>
-                <ul class="socials">
-                    <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/mmjerson"><i class="fab fa-github"></i></a></li>
-                    <li><a href="www.linkedin.com/in/mmjerson"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-bottom">
-                <p>copyright &copy;2021 Designed by MJ MOLINES with <span><i class="fas fa-heart"></i></span></p>
-            </div>
+        <div class="footer-content">
+            <h3>mj molines</h3>
+            <p>To God be the Glory, God bless us all!</p>
+            <ul class="socials">
+                <li><a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a></li>
+                <li><a href="https://github.com/mmjerson"><i class="fab fa-github"></i></a></li>
+                <li><a href="www.linkedin.com/in/mmjerson"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 Designed by MJ MOLINES with <span><i class="fas fa-heart"></i></span></p>
+        </div>
     </footer>
 
- 
-    
+
+
     <script src="./assets/js/main.js"> </script>
 </body>
-</html>
 
+</html>
